@@ -1,0 +1,36 @@
+﻿@model Etudiant
+@{
+    ViewData["Title"] = "New";
+}
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Add New Etudiant</h2>
+            <hr />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Nom"></label>
+            <input asp-for="Nom" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Prenom"></label>
+            <input asp-for="Prenom" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Age"></label>
+            <input asp-for="Age" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="CNE"></label>
+            <input asp-for="CNE" class="form-control" />
+        </div>
+
+
+        <button type="submit" class="btn btn-primary" style="width:150px">Save</button>
+        <a asp-action="Index" asp-controller="Etudiant" class="btn btn-secondary" style="width:150px">
+            back to Index
+        </a>
+    </div>
+</form>
+
